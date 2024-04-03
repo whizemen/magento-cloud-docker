@@ -20,5 +20,4 @@ class Opensearch82Cest extends OpensearchCest
      * Template version for testing
      */
     protected const TEMPLATE_VERSION = '2.4.6';
-
 }
