@@ -342,8 +342,10 @@ class GeneratePhp extends Command
     {
         if ($this->semver::satisfies($phpVersion, '<8.0')) {
             return '1.10.22';
+        } else if ($this->semver::satisfies($phpVersion, '<=8.2')) {
+            return '2.2.23';
+        } else {
+            return '2.7.0';
         }
-
-        return $this->semver::satisfies($phpVersion, '<8.2') ? '2.1.14' : '2.2.18';
     }
 }
