@@ -8,14 +8,14 @@ declare(strict_types=1);
 namespace Magento\CloudDocker\Test\Functional\Acceptance;
 
 /**
- * @group php73
+ * @group php83
  */
 class ServicesCest extends AbstractCest
 {
     /**
      * Template version for testing
      */
-    protected const TEMPLATE_VERSION = '2.3.4';
+    protected const TEMPLATE_VERSION = '2.4.7';
 
     public function _before(\CliTester $I): void
     {
@@ -99,26 +99,26 @@ class ServicesCest extends AbstractCest
                 ],
                 'notExpectedResult' => ['rabbitmq', 'selenium/standalone-chrome:latest', 'cron'],
             ],
-            'Redis 3.2, MariaDB 10.1, php 7.2, rmq 3.5' => [
-                'options' => '--redis=3.2 --db=10.1 --php=7.2 --rmq=3.5',
+            'Redis 3.2, MariaDB 10.1, php 8.3, rmq 3.5' => [
+                'options' => '--redis=3.2 --db=10.1 --php=8.3 --rmq=3.5',
                 'expectedResult' => [
                     'redis:3.2',
                     'magento/magento-cloud-docker-varnish:6.6-1.3',
                     'magento/magento-cloud-docker-nginx:1.24-1.3',
-                    'magento/magento-cloud-docker-php:7.2-fpm-1.3',
+                    'magento/magento-cloud-docker-php:8.3-fpm-1.3',
                     'magento/magento-cloud-docker-elasticsearch:6.5-1.3',
                     'mariadb:10.1',
                     'rabbitmq:3.5'
                 ],
                 'notExpectedResult' => ['selenium', 'cron'],
             ],
-            'Redis 4.0, MariaDB 10.2, php 7.4, rmq 3.6' => [
+            'Redis 4.0, MariaDB 10.2, php 8.0, rmq 3.6' => [
                 'options' => '--redis=4.0 --db=10.2 --php=7.4 --rmq=3.6',
                 'expectedResult' => [
                     'redis:4.0',
                     'magento/magento-cloud-docker-varnish:6.6-1.3',
                     'magento/magento-cloud-docker-nginx:1.24-1.3',
-                    'magento/magento-cloud-docker-php:7.4-fpm-1.3',
+                    'magento/magento-cloud-docker-php:8.0-fpm-1.3',
                     'magento/magento-cloud-docker-elasticsearch:6.5-1.3',
                     'mariadb:10.2',
                     'rabbitmq:3.6'
@@ -131,7 +131,7 @@ class ServicesCest extends AbstractCest
                     'redis:5.0',
                     'magento/magento-cloud-docker-varnish:6.6-1.3',
                     'magento/magento-cloud-docker-nginx:1.24-1.3',
-                    'magento/magento-cloud-docker-php:7.3-fpm-1.3',
+                    'magento/magento-cloud-docker-php:8.3-fpm-1.3',
                     'magento/magento-cloud-docker-elasticsearch:6.5-1.3',
                     'mariadb:10.2',
                     'cron',

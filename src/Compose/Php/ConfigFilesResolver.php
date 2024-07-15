@@ -29,31 +29,31 @@ class ConfigFilesResolver
     private const CONFIG_FILES = [
         'cli' => [
             'cli' => [
-                '>=7.0' => [
+                '>=8.0' => [
                     self::FROM_PATH => 'etc/php-cli.ini',
                     self::TO_PATH => 'etc/php-cli.ini',
                 ],
             ],
             'xdebug' => [
-                '>=7.2' => [
+                '>=8.0' => [
                     self::FROM_PATH => 'etc/php-xdebug-3.ini',
                     self::TO_PATH => 'etc/php-xdebug.ini',
                 ],
             ],
             'pcov' => [
-                '>=7.0' => [
+                '>=8.0' => [
                     self::FROM_PATH => 'etc/php-pcov.ini',
                     self::TO_PATH => 'etc/php-pcov.ini',
                 ],
             ],
             'mail' => [
-                '>=7.0' => [
+                '>=8.0' => [
                     self::FROM_PATH => 'etc/mail.ini',
                     self::TO_PATH => 'etc/mail.ini',
                 ],
             ],
             'gnupg' => [
-                '>=7.0' => [
+                '>=8.0' => [
                     self::FROM_PATH => 'etc/php-gnupg.ini',
                     self::TO_PATH => 'etc/php-gnupg.ini',
                 ],
@@ -61,37 +61,37 @@ class ConfigFilesResolver
         ],
         'fpm' => [
             'fpm' => [
-                '>=7.0' => [
+                '>=8.0' => [
                     self::FROM_PATH => 'etc/php-fpm.ini',
                     self::TO_PATH => 'etc/php-fpm.ini',
                 ],
             ],
             'xdebug' => [
-                '>=7.2' => [
+                '>=8.0' => [
                     self::FROM_PATH => 'etc/php-xdebug-3.ini',
                     self::TO_PATH => 'etc/php-xdebug.ini',
                 ],
             ],
             'pcov' => [
-                '>=7.0' => [
+                '>=8.0' => [
                     self::FROM_PATH => 'etc/php-pcov.ini',
                     self::TO_PATH => 'etc/php-pcov.ini',
                 ],
             ],
             'mail' => [
-                '>=7.0' => [
+                '>=8.0' => [
                     self::FROM_PATH => 'etc/mail.ini',
                     self::TO_PATH => 'etc/mail.ini',
                 ],
             ],
             'fpm.conf' => [
-                '>=7.0' => [
+                '>=8.0' => [
                     self::FROM_PATH => 'etc/php-fpm.conf',
                     self::TO_PATH => 'etc/php-fpm.conf',
                 ],
             ],
             'gnupg' => [
-                '>=7.0' => [
+                '>=8.0' => [
                     self::FROM_PATH => 'etc/php-gnupg.ini',
                     self::TO_PATH => 'etc/php-gnupg.ini',
                 ],
