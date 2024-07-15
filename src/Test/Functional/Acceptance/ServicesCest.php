@@ -113,7 +113,7 @@ class ServicesCest extends AbstractCest
                 'notExpectedResult' => ['selenium', 'cron'],
             ],
             'Redis 4.0, MariaDB 10.2, php 8.0, rmq 3.6' => [
-                'options' => '--redis=4.0 --db=10.2 --php=7.4 --rmq=3.6',
+                'options' => '--redis=4.0 --db=10.2 --php=8.0 --rmq=3.6',
                 'expectedResult' => [
                     'redis:4.0',
                     'magento/magento-cloud-docker-varnish:6.6-1.3',
