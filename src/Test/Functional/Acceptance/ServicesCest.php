@@ -90,50 +90,50 @@ class ServicesCest extends AbstractCest
             'Default' => [
                 'options' => '',
                 'expectedResult' => [
-                    'redis:5.0',
+                    'redis:7.0',
                     'magento/magento-cloud-docker-varnish:6.6-1.3',
                     'magento/magento-cloud-docker-nginx:1.24-1.3',
                     'magento/magento-cloud-docker-php:7.3-fpm-1.3',
                     'magento/magento-cloud-docker-elasticsearch:6.5-1.3',
-                    'mariadb:10.2'
+                    'mariadb:10.4'
                 ],
                 'notExpectedResult' => ['rabbitmq', 'selenium/standalone-chrome:latest', 'cron'],
             ],
-            'Redis 3.2, MariaDB 10.1, php 8.3, rmq 3.5' => [
-                'options' => '--redis=3.2 --db=10.1 --php=8.3 --rmq=3.5',
+            'Redis 6.0, MariaDB 10.4, php 8.3, rmq 3.8' => [
+                'options' => '--redis=6.0 --db=10.4 --php=8.3 --rmq=3.8',
                 'expectedResult' => [
-                    'redis:3.2',
+                    'redis:6.0',
                     'magento/magento-cloud-docker-varnish:6.6-1.3',
                     'magento/magento-cloud-docker-nginx:1.24-1.3',
                     'magento/magento-cloud-docker-php:8.3-fpm-1.3',
                     'magento/magento-cloud-docker-elasticsearch:6.5-1.3',
-                    'mariadb:10.1',
-                    'rabbitmq:3.5'
+                    'mariadb:10.4',
+                    'rabbitmq:3.8'
                 ],
                 'notExpectedResult' => ['selenium', 'cron'],
             ],
-            'Redis 4.0, MariaDB 10.2, php 8.0, rmq 3.6' => [
-                'options' => '--redis=4.0 --db=10.2 --php=8.0 --rmq=3.6',
+            'Redis 7.0, MariaDB 10.4, php 8.0, rmq 3.8' => [
+                'options' => '--redis=7.0 --db=10.4 --php=8.0 --rmq=3.8',
                 'expectedResult' => [
-                    'redis:4.0',
+                    'redis:7.0',
                     'magento/magento-cloud-docker-varnish:6.6-1.3',
                     'magento/magento-cloud-docker-nginx:1.24-1.3',
                     'magento/magento-cloud-docker-php:8.0-fpm-1.3',
                     'magento/magento-cloud-docker-elasticsearch:6.5-1.3',
                     'mariadb:10.2',
-                    'rabbitmq:3.6'
+                    'rabbitmq:3.8'
                 ],
                 'notExpectedResult' => ['selenium', 'cron'],
             ],
             'With cron and selenium' => [
                 'options' => '--with-cron --with-selenium',
                 'expectedResult' => [
-                    'redis:5.0',
+                    'redis:7.0',
                     'magento/magento-cloud-docker-varnish:6.6-1.3',
                     'magento/magento-cloud-docker-nginx:1.24-1.3',
                     'magento/magento-cloud-docker-php:8.3-fpm-1.3',
                     'magento/magento-cloud-docker-elasticsearch:6.5-1.3',
-                    'mariadb:10.2',
+                    'mariadb:10.4',
                     'cron',
                     'selenium/standalone-chrome:latest'
                 ],
