@@ -94,7 +94,7 @@ class BuildCustomComposeTest extends TestCase
                             ],
                             'services' => [
                                 'php' => [
-                                    'version' => '7.2',
+                                    'version' => '8.0',
                                     'enabled' => true,
                                     'extensions' => [
                                         'enabled' => ['xsl']
@@ -149,7 +149,7 @@ class BuildCustomComposeTest extends TestCase
                             ],
                             'services' => [
                                 'php' => [
-                                    'version' => '7.2',
+                                    'version' => '8.0',
                                     'enabled' => true,
                                     'extensions' => [
                                         'enabled' => ['xsl']
@@ -290,7 +290,7 @@ class BuildCustomComposeTest extends TestCase
                             'services' => [
                                 'php' => [
                                     'enabled' => true,
-                                    'version' => '7.2',
+                                    'version' => '8.0',
                                 ],
                                 'mysql' => [
                                     'enabled' => true,
@@ -313,7 +313,7 @@ class BuildCustomComposeTest extends TestCase
                             'services' => [
                                 'php' => [
                                     'enabled' => true,
-                                    'version' => '7.2',
+                                    'version' => '8.0',
                                 ],
                                 'mysql' => [
                                     'enabled' => true,
@@ -336,7 +336,7 @@ class BuildCustomComposeTest extends TestCase
                             'services' => [
                                 'php' => [
                                     'enabled' => true,
-                                    'version' => '7.2',
+                                    'version' => '8.0',
                                 ],
                                 'mysql' => [
                                     'enabled' => true,
